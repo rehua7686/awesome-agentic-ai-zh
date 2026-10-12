@@ -405,13 +405,13 @@ for label, prompt in PROMPTS.items():
 |---|---|---|---|---|
 | **Academic / teaching-style guide**<br>(start here) | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ⭐⭐⭐⭐⭐ | Reference book; look up a specific technique | Basics to advanced (CoT / ToT / ReAct / RAG) end to end, ★ 74k+, MIT |
 | | [PromptingGuide.ai](https://www.promptingguide.ai/) | ⭐⭐⭐⭐ | Phone reading; want runnable examples | Same content as dair-ai GitHub in website form + runnable examples |
-| | [NirDiamant/Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) | ⭐⭐⭐⭐ | Learn-by-running | 22 techniques (zero-shot → CoT → ReAct → constitutional), each in its own notebook, ★ 7k+. More hands-on than dair-ai (⚠️ NOASSERTION custom terms, research / non-commercial leaning) |
+| | [NirDiamant/Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) | ⭐⭐⭐⭐ | Learn-by-running | 22 techniques (zero-shot → CoT → ReAct → constitutional), each in its own notebook, ★ 7.9k+. More hands-on than dair-ai (⚠️ NOASSERTION custom terms, research / non-commercial leaning) |
 | **Official cookbook** | [Anthropic Cookbook — Prompt patterns](https://github.com/anthropics/claude-cookbooks) | ⭐⭐⭐⭐⭐ | Advanced Claude prompting (prompt caching / multimodal) | Introduced in Stage 1; for this stage focus on `misc/prompt_caching.ipynb` and `multimodal/` |
 | | [GoogleCloudPlatform/generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) | ⭐⭐⭐ | Google stack (PaLM / Gemini) users | Google Cloud's prompting cookbook; cross-vendor perspective |
 | **Inspiration collection**<br>(steal patterns, don't copy)| [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) | ⭐⭐⭐ | When you're stuck for ideas | Hundreds of "Act as a [role]..." prompts, ★ 162k+, CC0. **Take the pattern, rewrite — don't copy verbatim** |
 | **Production management**<br>(scale up)| [microsoft/prompt-engine](https://github.com/microsoft/prompt-engine) | ⭐⭐⭐ | Managing many prompts in production | TypeScript library, template + dialogue history management |
 | | [microsoft/promptflow](https://github.com/microsoft/promptflow) | ⭐⭐⭐ | Team apps needing eval | Visual prompt design + eval tooling, ★ 11k+ |
-| | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) ⭐ **Stage 2 → 3 bridge** | ⭐⭐⭐⭐⭐ | After dair-ai, want to scale prompts | Treat prompts as code — define signature / module, compiler auto-optimizes, ★ 34k+, MIT. **A framework, not a tutorial; higher entry barrier; pair with dspy.ai official tutorial** |
+| | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) ⭐ **Stage 2 → 3 bridge** | ⭐⭐⭐⭐⭐ | After dair-ai, want to scale prompts | Treat prompts as code — define signature / module, compiler auto-optimizes, ★ 38k+, MIT. **A framework, not a tutorial; higher entry barrier; pair with dspy.ai official tutorial** |
 
 > 💡 **Suggested reading order**: dair-ai guide for theory → Anthropic Cookbook for Claude implementation → NirDiamant for hands-on → dspy when going to production.
 
@@ -441,8 +441,8 @@ Engineering practice for LLM-powered systems can be divided into **three stack l
 
 Further reading (optional, for when you want to dig deeper):
 
-- [`Meirtz/Awesome-Context-Engineering`](https://github.com/Meirtz/Awesome-Context-Engineering) (★ 3k+) — comprehensive survey from prompt engineering to production agents
-- [`Windy3f3f3f3f/how-claude-code-works`](https://github.com/Windy3f3f3f3f/how-claude-code-works) (★ 2.4k+) — Claude Code internals, includes a context-engineering chapter
+- [`Meirtz/Awesome-Context-Engineering`](https://github.com/Meirtz/Awesome-Context-Engineering) (★ 3.3k+) — comprehensive survey from prompt engineering to production agents
+- [`Windy3f3f3f3f/how-claude-code-works`](https://github.com/Windy3f3f3f3f/how-claude-code-works) (★ 3.7k+) — Claude Code internals, includes a context-engineering chapter
 
 ## ✅ Self-Check Before Stage 3
 

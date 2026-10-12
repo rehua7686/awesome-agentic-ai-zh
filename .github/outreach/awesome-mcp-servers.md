@@ -3,7 +3,7 @@
 > **Status**: not contacted · **Channel**: GitHub PR
 > **Primary lang**: en
 > **Last updated**: 2026-05-09
-> **Primary repo**: https://github.com/punkpeye/awesome-mcp-servers (★86k+, MIT, has "Tutorials" section)
+> **Primary repo**: https://github.com/punkpeye/awesome-mcp-servers (★ 96k+, MIT, has "Tutorials" section)
 > **Secondary (skip for now)**: wong2/awesome-mcp-servers (★4k, MIT, **server-only policy** — no Tutorials section, off-policy for us)
 
 **Why this target**: We already cite both in our README's "Related projects" section (mutual benefit baked in). punkpeye is the canonical large MCP catalog and **has an explicit `## Tutorials` section** that fits us. wong2 is a stricter server-only fork — we'll skip that one to respect their list shape.

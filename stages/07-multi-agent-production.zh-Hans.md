@@ -83,8 +83,8 @@
 3. [**Anthropic — Message Batches API**](https://docs.anthropic.com/en/docs/build-with-claude/batch-processing) — 异步 batch job
 4. [**anthropics/courses — Prompt Evaluations**](https://github.com/anthropics/courses) ⭐⭐⭐⭐⭐ ★ 21k+ — Anthropic 官方 5 course umbrella、**module 4“Prompt Evaluations”对应本 stage eval / observability 部分**。Jupyter notebook、教怎么系统化评估 prompt 跟 agent 行为。
 5. **任一 eval framework 的文件** — promptfoo 或 LangSmith 或 weave
-6. [**ai-boost/awesome-harness-engineering**](https://github.com/ai-boost/awesome-harness-engineering)（★ 1.5k+）— agent harness 的工具 / pattern / eval / memory / MCP / observability 全集合
-7. [**ZhangHanDong/harness-engineering-from-cc-to-ai-coding**](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding)（★ 1.3k+）— 从 Claude Code 源码学 harness 设计（中文）
+6. [**ai-boost/awesome-harness-engineering**](https://github.com/ai-boost/awesome-harness-engineering)（★ 4.8k+）— agent harness 的工具 / pattern / eval / memory / MCP / observability 全集合
+7. [**ZhangHanDong/harness-engineering-from-cc-to-ai-coding**](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding)（★ 1.5k+）— 从 Claude Code 源码学 harness 设计（中文）
 
 ## 🏗 Harness Engineering — production agent runtime 的工程设计 ⭐ 本 stage 核心概念
 
@@ -238,13 +238,13 @@ Production agent 跑久了，**cost / latency 两条线会吃掉你大半预算�
 | **第一次写 multi-agent**（最快上手）| [crewAI](https://github.com/crewAIInc/crewAI) | role-based、几行 code 跑起来、production pattern 直接 |
 | **想要 group debate / brainstorm pattern** | [AutoGen](https://github.com/microsoft/autogen) | GroupChat 自由辩论、Microsoft 出品 |
 | **production 要 audit trail / checkpoint / human-in-loop** | [LangGraph](https://github.com/langchain-ai/langgraph) | state machine、控制最完整 |
-| **eval 标准化**（CI / regression 必装）| [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ | YAML config、跨模型比较、★ 20k+ |
-| **eval + observability 同平台** | [langfuse](https://github.com/langfuse/langfuse) ⭐ | OSS、tracing + eval + prompt mgmt、★ 26k+ |
+| **eval 标准化**（CI / regression 必装）| [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ | YAML config、跨模型比较、★ 25k+ |
+| **eval + observability 同平台** | [langfuse](https://github.com/langfuse/langfuse) ⭐ | OSS、tracing + eval + prompt mgmt、★ 35k+ |
 | **不改程序、快速 instrumentation** | [Helicone](https://github.com/Helicone/helicone) | proxy 中介、不绑 framework |
 | **全 stack 在 LangChain** | [LangSmith](https://www.langchain.com/langsmith)（商业）| LangChain 官方 observability |
 | **打造 Claude agent**（programmatic）| [claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) ⭐ | Anthropic 官方 agent SDK、跟 Claude Code 同 runtime |
 | **Deploy agent 成 API service** | [BentoML](https://github.com/bentoml/BentoML) | 最完整、Docker + serving |
-| **自架开源 LLM**（取代付费 API）| [vLLM](https://github.com/vllm-project/vllm) | 高吞吐量、★ 79k+ |
+| **自架开源 LLM**（取代付费 API）| [vLLM](https://github.com/vllm-project/vllm) | 高吞吐量、★ 93k+ |
 | **Fine-tune 开源 LLM** | [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) | 100+ 模型统一 SFT/DPO/PPO/GRPO、Web UI 零 code、中文社群最广、★ 70k+ |
 
 **建议入手顺序**：
@@ -263,21 +263,21 @@ Production agent 跑久了，**cost / latency 两条线会吃掉你大半预算�
 | **Multi-Agent Orchestration** | [microsoft/autogen](https://github.com/microsoft/autogen) | ⭐⭐⭐⭐⭐ | 想要 GroupChat 自由 debate pattern | Stage 4 介绍过、production 场景再回头看 multi-agent 辩论 / brainstorming 模式 |
 | | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | ⭐⭐⭐⭐⭐ | 想要 role-based 流水线 | 角色式 multi-agent（research → writer → reviewer），最简单 production pattern |
 | | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | ⭐⭐⭐⭐⭐ | 需要 audit trail / checkpoint / human-in-the-loop | state machine 路线、production 控制最强 |
-| **Eval Frameworks** | [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ | ⭐⭐⭐⭐⭐ | 把 eval 流程标准化、CI 整合 | YAML config、跨模型比较。★ 20k+、MIT |
-| | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | ⭐⭐⭐⭐ | 学术 benchmark 主张（MMLU / HellaSwag / GSM8K）| 学术等级。★ 12k+、MIT |
+| **Eval Frameworks** | [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ | ⭐⭐⭐⭐⭐ | 把 eval 流程标准化、CI 整合 | YAML config、跨模型比较。★ 25k+、MIT |
+| | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | ⭐⭐⭐⭐ | 学术 benchmark 主张（MMLU / HellaSwag / GSM8K）| 学术等级。★ 14k+、MIT |
 | | [openai/evals](https://github.com/openai/evals) | ⭐⭐⭐⭐ | OpenAI 专属 eval / 想回馈上游 | ★ 18k+ |
-| **Observability** | [langfuse](https://github.com/langfuse/langfuse) ⭐ | ⭐⭐⭐⭐⭐ | 自架 production observability | OSS LangSmith 替代、traces + sessions + evals + prompt mgmt。★ 26k+、MIT |
+| **Observability** | [langfuse](https://github.com/langfuse/langfuse) ⭐ | ⭐⭐⭐⭐⭐ | 自架 production observability | OSS LangSmith 替代、traces + sessions + evals + prompt mgmt。★ 35k+、MIT |
 | | [LangSmith](https://www.langchain.com/langsmith)（商业）| ⭐⭐⭐⭐ | 全 stack 在 LangChain / LangGraph 上 | LangChain 官方、只有 hosted 版 |
 | | [Helicone](https://github.com/Helicone/helicone) | ⭐⭐⭐⭐ | 不想改程序、快速上 instrumentation | proxy 中介、顺便拿到 logging + caching。★ 5.7k+、Apache 2.0 |
 | | [weave (W&B)](https://github.com/wandb/weave) | ⭐⭐⭐⭐ | 团队已在用 W&B 做 ML 实验追踪 | W&B tracing + eval、跟 wandb 整合 |
 | **Anthropic SDK 进阶** | [anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) | ⭐⭐⭐⭐⭐ | 直接基于 Claude API 做应用 | 官方 Python SDK：streaming / async / tool use / prompt caching / batches / files |
 | | [anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript) | ⭐⭐⭐⭐ | TypeScript / Node / web app | Python SDK 的 TS 版 |
-| | [claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) ⭐ | ⭐⭐⭐⭐⭐ | 打造 Claude-based agent 而非只 API | 内建 tool use loop / file access / sandbox / subagent 编排；跟 Claude Code 同 runtime、想看内部运作直接读 source。★ 6.9k+、MIT |
-| | [claude-agent-sdk-typescript](https://github.com/anthropics/claude-agent-sdk-typescript) | ⭐⭐⭐⭐ | Node / web app 环境 Claude agent | Claude Agent SDK TS 版。★ 1.4k+ |
+| | [claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) ⭐ | ⭐⭐⭐⭐⭐ | 打造 Claude-based agent 而非只 API | 内建 tool use loop / file access / sandbox / subagent 编排；跟 Claude Code 同 runtime、想看内部运作直接读 source。★ 8.3k+、MIT |
+| | [claude-agent-sdk-typescript](https://github.com/anthropics/claude-agent-sdk-typescript) | ⭐⭐⭐⭐ | Node / web app 环境 Claude agent | Claude Agent SDK TS 版。★ 1.8k+ |
 | | [Anthropic Cookbook（进阶）](https://github.com/anthropics/anthropic-cookbook) | ⭐⭐⭐⭐ | 想看官方进阶 SDK pattern | 特别是 `prompt_caching.ipynb` / `tool_use/` / `multimodal/` 三个 notebook |
-| **Deployment** | [BentoML](https://github.com/bentoml/BentoML) | ⭐⭐⭐⭐ | 把 agent 包成 production API service | Docker + serving framework。★ 8k+、Apache 2.0 |
+| **Deployment** | [BentoML](https://github.com/bentoml/BentoML) | ⭐⭐⭐⭐ | 把 agent 包成 production API service | Docker + serving framework。★ 8.9k+、Apache 2.0 |
 | | [LangServe](https://github.com/langchain-ai/langserve) | ⭐⭐⭐⭐ | LangChain agent 快速 deploy | 底层 FastAPI |
-| | [vLLM](https://github.com/vllm-project/vllm) | ⭐⭐⭐⭐ | 自架开源 LLM 取代付费 API | 高吞吐量 LLM serving、Llama / Qwen 等。★ 79k+、Apache 2.0 |
+| | [vLLM](https://github.com/vllm-project/vllm) | ⭐⭐⭐⭐ | 自架开源 LLM 取代付费 API | 高吞吐量 LLM serving、Llama / Qwen 等。★ 93k+、Apache 2.0 |
 | **中文 deploy / fine-tune** | [datawhalechina/self-llm](https://github.com/datawhalechina/self-llm) | ⭐⭐⭐⭐ | 中文团队要自架开源 LLM | training-to-deployment 完整中文指南、Qwen / Llama / GLM / 多模态。★ 30k+、Apache 2.0 |
 | | [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) | ⭐⭐⭐⭐⭐ | 要 fine-tune 开源 LLM（不只 prompt eng）| 100+ 模型统一 SFT/DPO/PPO/GRPO、Web UI 零 code、中文社群最广。★ 70k+、Apache 2.0 |
 | **Multi-Agent 案例研究** | [geekan/MetaGPT](https://github.com/geekan/MetaGPT) | ⭐⭐⭐⭐⭐ | 想看角色分工 + artifact 交接 pattern | SOP-based PM / Architect / Engineer multi-agent team、PRD → 设计 → code 一路产出。★ 67k+、MIT |
