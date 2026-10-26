@@ -334,8 +334,8 @@
 | **HippoRAG 2** | KG + Personalized PageRank，跨文档 multi-hop，受海马体启发 | [Gutiérrez et al. ICML 2025](https://arxiv.org/abs/2502.14802)、[OSU-NLP-Group/HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG) ⭐ |
 | **ColPali** | 直接对 PDF 图像进行 embedding，绕过 OCR，多模态 RAG 入门 | [Faysse et al. 2024](https://arxiv.org/abs/2407.01449) |
 | **A-RAG / SoK Agentic RAG** | 将 retrieval 作为 Tool，Agent 自主决定检索次数/方式 | [Ayanami0730/arag](https://github.com/Ayanami0730/arag)、[SoK survey](https://arxiv.org/abs/2603.07379) ⭐ |
-| **DSPy** | 不写 Prompt，使用程序 + 签名进行自动优化 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) ★ 34.4k |
-| **LightRAG** | Microsoft GraphRAG 的轻量级替代方案，EMNLP 2025 论文 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) ★ 35.1k（已在 GraphRAG 部分介绍） |
+| **DSPy** | 不写 Prompt，使用程序 + 签名进行自动优化 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) ★ 38k+ |
+| **LightRAG** | Microsoft GraphRAG 的轻量级替代方案，EMNLP 2025 论文 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) ★ 40k+（已在 GraphRAG 部分介绍） |
 
 <details>
 <summary>📚 完整概览 — 其他 12 个值得了解的进阶 RAG 技巧（展开查看）</summary>
@@ -696,7 +696,7 @@ OpenAI 的 **o1**（2024-09）开启了这一趋势，随后是开源的 DeepSee
 | **首次运行 RAG**（上手最快）| [Chroma](https://github.com/chroma-core/chroma) + [LlamaIndex](https://github.com/run-llama/llama_index) | 本地优先，零运维，quickstart 友好。Stage 6 练习默认配置。 |
 | **企业级 RAG 框架**（LangChain / LlamaIndex 之外的第三选择）| [Haystack (deepset)](https://github.com/deepset-ai/haystack) ★ 25.2k Apache-2.0 | deepset 开源，面向 production 的编排，企业级 NLP 场景成熟。 |
 | **Agent 长期记忆**（见 5 个可上生产的 Memory Layer）| [agentmemory](https://github.com/rohitg00/agentmemory) / [mem0](https://github.com/mem0ai/mem0) / [Letta](https://github.com/letta-ai/letta) / [Zep](https://github.com/getzep/zep) / [LangMem](https://github.com/langchain-ai/langmem) | 详见上方 5 个可上生产的 Memory Layer 部分。 |
-| **RAG / Memory Eval**（必备）| [ragas](https://github.com/explodinggradients/ragas) ★ 13.9k | RAG 评估标准工具，8+ 指标，支持 reference-free + reference-based。 |
+| **RAG / Memory Eval**（必备）| [ragas](https://github.com/explodinggradients/ragas) ★ 16k+ | RAG 评估标准工具，8+ 指标，支持 reference-free + reference-based。 |
 | **Production Scale RAG**（百万级文档）| [Qdrant](https://github.com/qdrant/qdrant) + LlamaIndex | Rust 编写的 vector DB，在大规模场景下比 Chroma 更快。 |
 | **已有 Postgres 环境** | [pgvector](https://github.com/pgvector/pgvector) | Postgres 扩展，SQL + vector 在同一个数据库中，运维最简。 |
 | **企业级 RAG + Web UI** | [RAGFlow](https://github.com/infiniflow/ragflow) | 强大的文档解析能力（含 OCR / 表格 / 布局），企业级应用，自带 Web UI。 |
@@ -718,22 +718,22 @@ OpenAI 的 **o1**（2024-09）开启了这一趋势，随后是开源的 DeepSee
 | 分类 | Project | ⭐ | 适用人群 | 推荐理由 / 备注 |
 |---|---|---|---|---|
 | **RAG Framework**<br>（完整流水线） | [LlamaIndex](https://github.com/run-llama/llama_index) | ⭐⭐⭐⭐⭐ | 以文档为核心的应用 | 以 RAG 为核心，提供 document loader / chunking / retrieval / query engine 一站式服务。★ 49k+ |
-| | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | ⭐⭐⭐⭐⭐ | 希望将 RAG 部署给非开发者用户使用的团队 | Production 级别的 RAG engine，深度文档理解（layout / 表格 / OCR）+ hybrid retrieval + agent loop + Web UI。★ 79k+，Apache-2.0 许可。 |
-| | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | ⭐⭐⭐⭐ | 探索研究级 graph + long-context memory 方法的开发者 | graph + vector hybrid retrieval + summarization-based memory，基于 EMNLP 2025 论文。★ 34k+，MIT 许可。代码风格偏研究。 |
+| | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | ⭐⭐⭐⭐⭐ | 希望将 RAG 部署给非开发者用户使用的团队 | Production 级别的 RAG engine，深度文档理解（layout / 表格 / OCR）+ hybrid retrieval + agent loop + Web UI。★ 92k+，Apache-2.0 许可。 |
+| | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | ⭐⭐⭐⭐ | 探索研究级 graph + long-context memory 方法的开发者 | graph + vector hybrid retrieval + summarization-based memory，基于 EMNLP 2025 论文。★ 40k+，MIT 许可。代码风格偏研究。 |
 | **Vector DB**<br>（本地优先） | [Chroma](https://github.com/chroma-core/chroma) | ⭐⭐⭐⭐⭐ | 练习 2 / 4，最容易上手的 vector DB | 开源的 embedding 数据库，可本地运行，支持 in-memory / SQLite 后端，零运维。★ 27k+，Apache-2.0 许可。**安装**: `pip install chromadb` |
-| **Vector DB**<br>（Production Scale） | [Qdrant](https://github.com/qdrant/qdrant) | ⭐⭐⭐⭐⭐ | Chroma 性能不足，需要 production scale 时 | Rust 编写的 vector DB，在大规模场景下比 Chroma 更快。提供云端版和自托管版。★ 31k+ |
+| **Vector DB**<br>（Production Scale） | [Qdrant](https://github.com/qdrant/qdrant) | ⭐⭐⭐⭐⭐ | Chroma 性能不足，需要 production scale 时 | Rust 编写的 vector DB，在大规模场景下比 Chroma 更快。提供云端版和自托管版。★ 35k+ |
 | **Vector DB**<br>（Hybrid） | [Weaviate](https://github.com/weaviate/weaviate) | ⭐⭐⭐⭐ | Production 部署 + schema 约束 | 内置模块（text2vec / generative / classification），schema 驱动，原生支持 BM25 + vector hybrid 搜索。★ 16k+ |
-| **Vector DB**<br>（已有 Postgres 环境） | [pgvector](https://github.com/pgvector/pgvector) | ⭐⭐⭐⭐ | 原本就在使用 Postgres 的团队 | Postgres 扩展，SQL + vector 在同一个数据库中，运维最简。★ 21k+ |
-| **Memory Framework**<br>（自动事实提取） | [mem0ai/mem0](https://github.com/mem0ai/mem0) | ⭐⭐⭐⭐⭐ | 个人助手 / Chatbot 需要 user-level 记忆 | 自我精炼的 memory 层，支持跨 session 存储事实。★ 54k+ |
-| **Memory Framework**<br>（OS-Paging） | [Letta（原 MemGPT）](https://github.com/letta-ai/letta) | ⭐⭐⭐⭐ | Agent 需要运行很长时间（以月为单位） | 阶层式 memory（working / archival），借鉴 OS Paging 概念。★ 22k+ |
+| **Vector DB**<br>（已有 Postgres 环境） | [pgvector](https://github.com/pgvector/pgvector) | ⭐⭐⭐⭐ | 原本就在使用 Postgres 的团队 | Postgres 扩展，SQL + vector 在同一个数据库中，运维最简。★ 23k+ |
+| **Memory Framework**<br>（自动事实提取） | [mem0ai/mem0](https://github.com/mem0ai/mem0) | ⭐⭐⭐⭐⭐ | 个人助手 / Chatbot 需要 user-level 记忆 | 自我精炼的 memory 层，支持跨 session 存储事实。★ 67k+ |
+| **Memory Framework**<br>（OS-Paging） | [Letta（原 MemGPT）](https://github.com/letta-ai/letta) | ⭐⭐⭐⭐ | Agent 需要运行很长时间（以月为单位） | 阶层式 memory（working / archival），借鉴 OS Paging 概念。★ 25k+ |
 | **Memory（框架内）** | [LangChain — Memory](https://python.langchain.com/docs/concepts/memory/) | ⭐⭐⭐ | 已在使用 LangChain | 4 种 memory 抽象（buffer / summary / vectorstore-backed / entity）。 |
 | **进阶 RAG 技巧** | [Anthropic — Contextual Retrieval Cookbook](https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide) | ⭐⭐⭐⭐⭐ | 跑完基础 RAG 后，想升级 | Claude 结合 prompt caching 的 contextual chunking，包含完整的端到端示例。 |
 | **中文 RAG 范例** | [chatchat-space/Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat) | ⭐⭐⭐⭐ | 中文知识库 / RAG 应用 | 中文社区最广泛使用，支持本地 LLM 部署（ChatGLM / Qwen / Llama / Ollama），中文默认配置好。★ 38k+，Apache-2.0 许可。⚠️ 最后更新 2025-11（边缘情况）。 |
-| **教程合集** | [ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub) | ⭐⭐⭐⭐ | 想看“同一概念在不同场景下如何实现” | 主题式 LLM / RAG / agent 教程合集，Jupyter notebook 形式，跨多个 stage 都有用。★ 34k+，MIT 许可。 |
-| **Production AI Assistant**<br>（学习部署 RAG 的参考）| [onyx](https://github.com/onyx-dot-app/onyx)（原 Danswer）| ⭐⭐⭐⭐⭐ | 想学习“如何将 RAG 驱动的 AI Assistant 部署到 production” | 开源的企业级 AI Assistant，支持跨 LLM，包含完整的 ingest / retrieval / chat / admin 功能。★ 29.4k，积极维护。 |
+| **教程合集** | [ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub) | ⭐⭐⭐⭐ | 想看“同一概念在不同场景下如何实现” | 主题式 LLM / RAG / agent 教程合集，Jupyter notebook 形式，跨多个 stage 都有用。★ 38k+，MIT 许可。 |
+| **Production AI Assistant**<br>（学习部署 RAG 的参考）| [onyx](https://github.com/onyx-dot-app/onyx)（原 Danswer）| ⭐⭐⭐⭐⭐ | 想学习“如何将 RAG 驱动的 AI Assistant 部署到 production” | 开源的企业级 AI Assistant，支持跨 LLM，包含完整的 ingest / retrieval / chat / admin 功能。★ 32k+，积极维护。 |
 | **RAG Cookbook**<br>（30+ 技巧范例）| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | ⭐⭐⭐⭐⭐ | 跑完基础 RAG 后，想探索各种变体 | 大型 RAG 技巧 Cookbook，包含 Self-RAG / HyDE / Multi-Query / Adaptive 等 30+ 个 Jupyter notebook 示例。 |
-| **DSPy**<br>（编程而非 Prompt）| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | ⭐⭐⭐⭐⭐ | 使用 LLM 一段时间后，想自动优化 prompt + chain | Stanford NLP group 开发，★ 34.4k MIT，Path 3 范式（详见 DSPy）。 |
-| **RAG / Memory Eval**<br>（必备）| [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | ⭐⭐⭐⭐⭐ | 完成练习 4（完整 RAG Pipeline）后，想衡量检索精度 | RAG 评估标准工具，8+ 指标，支持 reference-free + reference-based。★ 13.9k Apache-2.0。 |
+| **DSPy**<br>（编程而非 Prompt）| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | ⭐⭐⭐⭐⭐ | 使用 LLM 一段时间后，想自动优化 prompt + chain | Stanford NLP group 开发，★ 38k+ MIT，Path 3 范式（详见 DSPy）。 |
+| **RAG / Memory Eval**<br>（必备）| [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | ⭐⭐⭐⭐⭐ | 完成练习 4（完整 RAG Pipeline）后，想衡量检索精度 | RAG 评估标准工具，8+ 指标，支持 reference-free + reference-based。★ 16k+ Apache-2.0。 |
 
 **推荐入手顺序**:
 1. 首次安装必备：**Chroma + LlamaIndex**（用于 Stage 6 练习）。
